@@ -1,0 +1,907 @@
+    @font-face {
+        font-family: ProximaNova;
+        src: url(fonts/ProximaNovaRegular.otf);
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: ProximaNova;
+        src: url(ProximaNovaBold.otf);
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: SourceSansPro;
+        src: url(fonts/SourceSansPro-Regular.ttf);
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: SourceSansPro;
+        src: url(fonts/SourceSansPro-Bold.ttf);
+        font-weight: bold;
+    }
+    body{
+        margin:0px;
+        font-family: 'SourceSansPro' , serif;
+        /* background-color: red; */
+    }
+
+    header{
+    background: url('images/bg.png') bottom center no-repeat;
+    background-size: cover;
+    height: 750px;
+    }
+
+
+    #topbar{
+        height: 70px;
+        width: 1078px;
+        margin-left: 245px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+/* edw telivneiw to top  */
+
+    #topbar .left{
+        display: flex;
+        /* flex-direction: column; */
+        /* background-color: blue; */
+        align-items: center;
+    }
+
+    
+    #topbar .left .time{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    #topbar .left .time h2{ 
+        display: flex;
+        padding-left: 30px;
+        margin:0px;
+        width: 60px;
+       
+        height:15px;
+        font-size: 12px;
+        font-weight: bold;
+        color:white;
+        letter-spacing:2px;
+        box-sizing: border-box;
+    }
+    #topbar .left .time-content span{
+        /* background-color: turquoise; */
+        width: 60px;
+        height: 32px;
+        color:white;
+        font-size: 26px;
+        font-family: ProximaNova;
+        font-weight: normal;
+        padding-left: 6px;
+    }
+
+    #topbar .left .weather{
+        width: 99px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;
+    }
+    #topbar .left .weather h2{
+        margin:0px;
+        width: 71px;
+        font-size:12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    #topbar .left .weather .weather-content{
+        display: flex;
+        flex:1;
+    }
+
+    #topbar .left .weather .weather-content img{
+        padding-right: 5px;
+        padding-top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    #topbar .left .weather .weather-content h3{
+        margin:0px;
+        font-size: 26px;
+        font-weight: normal;
+        font-family: ProximaNova;
+        color:white;
+    }
+    #topbar .left .weather .weather-content h4{
+        margin:0px;
+        font-size: 26px;
+        font-weight: normal;
+        font-family: ProximaNova;
+        color:white;
+    }
+    #topbar .left .weather .weather-content h5{
+        margin:0px;
+        font-size: 26px;
+        font-weight: normal;
+        font-family: ProximaNova;
+        color:white;
+    }
+
+   
+    #topbar .right{
+        display: flex;
+    }
+
+    #topbar .right #flag img{
+        width: 28px;
+        height: 20px;
+        padding-right: 4px;
+    }
+
+    #topbar .right .login{
+        display: flex;
+        align-items: center;
+    }
+    #topbar .right .login img{
+        padding-right: 5px;
+    }
+    #topbar .right .login a{
+        text-decoration: none;
+    }
+    #topbar .right .login h2{
+        margin:0px;
+        padding-right: 40px;
+        width: 119px;
+        height: 18px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        
+    }
+
+
+    nav#main{
+        height: 60px;
+        background:white;
+        border-radius: 4px;
+        position: relative;
+    }
+    nav#main .founded{
+        display: flex;
+        flex-direction: column; 
+        padding-left:245px;
+    }
+    
+
+    nav#main #fan{
+        width: 261px;
+        height: 14px;
+    }
+    nav#main #founded{
+        width: 96px;
+        height: 6px;
+        padding-top: 2px;
+        padding-left: 100px;
+    }
+
+    #logo{
+        position: absolute;
+        display: block;
+        border:10px solid #AB0427;
+        border-radius: 100%;
+        left:50px;  /*60px olo -10 border=50px*/
+        top:50%;
+        transform: translateY(-50%);/*50% transform pros ta panv toy ipsoys*/
+    }
+
+    #logo img{
+        display: block;
+    }
+
+    
+    .container{
+        width:1360px;
+        margin:0 auto;
+    }
+
+    #main-menu{
+        padding:0 40px 0 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px; 
+        list-style: none;
+       
+    }
+    #main-menu a{
+        color:#002868;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #main-menu a:hover{
+        color:#BF0A30;
+    }
+
+
+    #main-menu li a{
+        display: flex;
+        padding:22px 20px 20px;
+       
+    }
+   
+    #main-menu .menu-content{
+        display: none;
+        width: 275px;
+        height: 365px;
+        position: absolute;
+        left:260px;
+        bottom: -375px;
+        list-style: none;
+        border-top: 20px solid transparent;
+    }
+
+    #main-menu:hover .menu-content{
+        display:block;
+    }
+
+    #main-menu .menu-content li a{
+        background-color: white;
+        text-decoration: none;
+        color:#002868;
+        font-size: 14px;
+        font-weight: bold;
+        padding:10px 0 5px 20px;
+    }
+    
+    #main-menu .menu-content li a:hover{
+        background-color: white;
+        text-decoration: none;
+        color:#BF0A30;
+        font-size: 14px;
+        font-weight: bold;
+        padding:10px 0 5px 20px;
+    }
+
+
+    #featured{
+        background:url('images/circle.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+        width: 410px;
+        height: 410px;
+        margin:70px auto 0;
+        border:6px solid white;
+        border-radius: 100%;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        color:white;
+        padding: 40px;
+       
+    }
+
+    #featured h3{
+        margin:10px 0 30px;
+        font-size: 12px;
+    }
+
+    #featured h2{
+        margin:0 0 30px;
+    }
+
+    #featured p{
+        font-size: 16px;
+        margin:0 0 30px;
+        line-height: 30px;
+    }
+
+    #featured a{
+        border:1px solid white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        color: white;
+        width: 200px;
+        height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* telos 1ou meroys */
+
+.apografh{
+    margin-top: 32px;
+    background: url('images/apografh.png')0 0 no-repeat;
+    background-size: cover;
+    height: 744px;
+    }
+    
+    .tree{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+     }
+    .tree img{
+        width: 45px;
+        height: 80px;
+    }
+
+    .tree #grRoots{
+        padding-top:20px;
+        width: 255px;
+        height: 42px;
+        padding-bottom: 40px;
+    }
+    .tree h2{
+        margin: 0px;
+        color:#BF0A30;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    .text{
+        display: flex;
+        height:245px;
+        padding-top: 40px;
+    }
+    .tree .text .text-left{
+        width: 464px;
+        height: 265px;
+    }
+    .tree .text .text-left h2{
+        margin: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #002868;
+        width: 460px;
+    }
+
+    .tree .text .text-left p{
+        margin: 0px;
+        padding-left: 4px;
+        padding-top: 20px;
+        width: 460px;
+        height: 80px;
+        font-size:16px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 25px;
+    }
+
+    .tree .text .text-left h3{
+        margin: 0px;
+        padding-left: 4px;
+        padding-top: 10px;
+        width: 460px;
+        height: 25px;
+        font-size: 16;
+        font-weight: bold;
+        line-height: 25px;
+        color:#333333;
+    }
+
+    .tree .text .text-left h4{
+        margin: 0px;
+        padding-left: 4px;
+        padding-top: 15px;
+        width: 460px;
+        height: 55px;
+        font-size:16px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 25px;
+    }
+    .tree .text .text-right{
+        width: 475px;
+        height: 235px;
+        text-decoration: none;
+        padding-left: 60px;
+    }
+
+    .tree .text .text-right h2{
+        margin: 0px;
+        width: 150px;
+        height: 20px;
+        padding-left: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        padding-bottom: 20px;
+        color:#002868;  
+    }
+
+    .tree .text .text-right li{
+        list-style: none;
+        padding-bottom: 2px;
+        font-weight: normal;
+        line-height: 25px; 
+    }
+    
+    .tree .text .text-right li a{
+        text-decoration: none;
+        pointer-events: none;
+        color:#333333; 
+    }
+    .tree .text .text-right li a::before{
+        content: '>';
+        float: left;
+        padding-right: 10px;
+    }
+
+    .tree .date{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 440px;
+        height: 97px;
+        padding-top: 30px;
+    }
+
+    .tree .date h2{
+        margin:0px;
+        width: 141px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color:#BF0A30;
+    }
+    .tree .date h3{
+        margin:0px;
+        width: 437px;
+        height: 43px;
+        font-size: 34px;
+        font-weight: bold;
+        color:#002868;
+    }
+    .tree .date h4{
+        margin:0px;
+        width: 92px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color:#002868;
+    }
+    /* telos 2ou meros */
+    
+    
+    .erga{
+        background-color: #002868;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .erga .section-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 179px;
+        height: 49px;
+        padding-top:40px;
+    }
+
+    .erga .section-title h2{
+        margin: 0px;
+        height: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color:#FFFFFF;
+       padding-top: 10px;
+    }
+
+    .erga .inputs{
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .erga .inputs .hospital{
+        width: 300px;
+        height: 413px;
+        padding-right: 20px;
+        position: relative;
+    }
+    
+    .erga .inputs .hospital h2{
+        padding-top: 20px;
+        margin: 0px;
+        font-size: 24px;
+        font-weight: bold;
+        color:#FFFFFF;
+    }
+    .erga .inputs .hospital p{
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .erga .inputs .hospital svg{
+        position: absolute;
+        bottom: 14px;
+        left:5px;
+    }
+    .erga .inputs .hospital a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .hospital a:hover{
+        background-color:#BF0A30 ;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .inputs .traditional{
+        width: 300px;
+        height: 413px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .erga .inputs .traditional h2{
+        padding-top: 20px;
+        margin: 0px;
+        font-size: 24px;
+        font-weight: bold;
+        color:#FFFFFF;
+    }
+    .erga .inputs .traditional p{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+    }
+    .erga .inputs .traditional svg{
+        position: absolute;
+        bottom: 14px;
+        left:5px;
+    }
+    .erga .inputs .traditional a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .traditional a:hover{
+        background-color:#BF0A30 ;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .inputs .parnonas{
+        width: 300px;
+        height: 413px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .erga .inputs .parnonas h2{
+        padding-top: 20px;
+        margin: 0px;
+        font-size: 24px;
+        font-weight: bold;
+        color:#FFFFFF;
+    }
+    .erga .inputs .parnonas p{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+    }
+
+    .erga .inputs .parnonas svg{
+        position: absolute;
+        bottom: 14px;
+        left:5px;
+    }
+    .erga .inputs .parnonas a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .parnonas a:hover{
+        background-color:#BF0A30 ;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .inputs .parks{
+        width: 300px;
+        height: 413px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .erga .inputs .parks h2{
+        margin: 0px;
+        font-size: 24px;
+        font-weight: bold;
+        color:#FFFFFF;
+        padding-top: 20px;
+    }
+
+    .erga .inputs .parks p{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+    }
+    .erga .inputs .parks svg{
+        position: absolute;
+        bottom: 14px;
+        left:5px;
+    }
+    .erga .inputs .parks a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .parks a:hover{
+        background-color:#BF0A30;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .button{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        text-align: center;
+        position: relative;   
+    }
+
+    .erga .button a{ 
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        color: #FFFFFF;
+        padding-top:16px; 
+        border:1px solid white ;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .erga .button img{
+        position: absolute;
+        top:13px;
+        right:13px;
+    }
+
+    .erga .button a:hover{
+        background-color: #BF0A30;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .contact{
+        height: 573px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .contact .address{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 740px;
+        height: 457px;
+    }
+    .contact  .address h2{
+        margin: 0px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color:#002868;
+    }
+    .contact .address .form{
+        width: 619px;
+        height: 378px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contact .address .form  .field {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+   
+    }
+    .contact .address .form  .field h3{
+        margin: 0px;
+        font-size: 12px;
+        font-weight: normal;
+        margin-top:15px;
+        padding-bottom: 5.5px;
+    }
+    .form .pedio{
+        border:1px solid #979797; 
+        border-radius: 4px;
+        height: 46px;
+        padding-left: 30px;
+    }
+  
+
+    .form .field span{
+        position: absolute;
+        left:0px;
+        top: 53px;
+        padding-left: 9px;
+        }
+
+        .form .textarea1{
+            width: 619px;
+            height: 138px;
+        }
+        .form .textarea1 h3{
+            margin: 0px;
+            font-size: 12px;
+            font-weight: normal;
+            margin-top:15px;
+            padding-bottom: 5.5px
+        }
+        .form .textarea1 textarea{
+            width: 619px;
+            border:1px solid #979797; 
+            border-radius: 4px;
+            height: 119px;
+            box-sizing: border-box;
+        }
+
+        .contact .button{
+            display: flex;
+            flex-direction: row;
+            margin-top: 48px;
+            justify-content: flex-end;
+        }
+        .contact .button a{
+            background-color: #BF0A30;
+            text-decoration: none;
+            width: 240px;
+            height: 50px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            padding-top: 15px;
+            box-sizing: border-box; 
+        }
+        .contact .button a:hover{
+            background-color:#002868;
+            color:white;  
+        }
+        .contact .button h3{
+            margin-top: 0px;
+        }
+        .contact .button img {
+            position: absolute;
+            right: 13px;
+            top: 14px;
+        }
+
+    /* footer start*/
+    .footer1{
+        height: 442px;
+        padding-top: 30px;
+        position: relative;  
+    }
+    
+    .footer1 .to-top img{
+        position: absolute;
+        top:10px;
+        right: 100px;
+    }
+    
+    .footer1 .cont{
+        background-color: #002868;
+        width: 100%;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    
+    .footer1 .cont .logo2{
+        border:10px solid #002868;
+        border-radius: 100%;
+        padding-top: 20px;    
+    }
+   
+    .footer1 .cont .found{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .footer1 .cont .found svg:last-child{
+        padding-top: 4px;
+    }
+
+    .footer1 .cont .social{
+        width: 320px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 27px;    
+    }
+
+    .footer1 .cont #main-menu2{
+        width: 1101px;
+        height: 60px;
+        padding:0 40px 0 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;  /*h 100% to idio einai*/
+        list-style: none;
+    }
+    .footer1 .cont #main-menu2 a{
+        color:white;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .footer1 .cont #main-menu2 a:hover{
+        color:#BF0A30;
+    }
+
+    
+    .footer1 .cont .last h5{
+        margin: 0px;
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+        padding-top: 8px;
+        padding-bottom: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
