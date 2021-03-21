@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Login responsive</title>
+    <style>
+        .html,body{
+        margin:0px;
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .container{
+        display: flex;
+        
+        /* height: 100vh; */
+        /* height:600px; */
+        /* background-color: aqua; */
+    }
+    .right{
+        /* background-color: crimson; */
+        flex:1 60%;
+        order:1;
+       
+    }
+    .right img{
+
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .left{
+        
+        /* background-color:coral; */
+        display: flex;
+        flex:1 40%;
+        flex-direction: column;
+        padding:2rem;
+        order:0;
+    }
+    .left  img{
+        margin:0px auto;
+        /* background-color: lightgreen; */
+        height:50px;
+        width:50px;
+    }
+    
+    .left .welcome{
+        /* background-color: cornflowerblue; */
+        display: flex;
+        flex-direction: column;
+        /* flex:1 20%; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:1rem;
+        
+        
+    }
+    
+
+    .left .welcome h2,h5{
+        margin:0px;
+        margin-top:1rem;
+    }
+
+    /* field */
+    .left .pedia{
+        /* background-color: lightcyan; */
+        flex:1 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top:3rem;
+        
+        /* align-items: center; */
+       
+    }
+
+    .left .pedia .field{
+        /* padding: 5px; */
+        /* background-color: lightsalmon; */
+        /* display: block; */
+        position: relative;
+        margin-top:1rem;
+        
+        flex:0 50px;
+        
+       
+    }
+    .left .field .email{
+        display: flex;
+    }
+    .left .field .email input{
+        padding-top:2rem;
+        /* width: 70%; */
+        flex:1 1 auto;
+        border:1px solid #c0c0c0;
+        border-radius: 4px;
+        /* box-sizing: border-box; */
+  
+    
+    }
+    .left .field .password input{
+        padding-top:2rem;
+        width: 100%;
+        border:1px solid #c0c0c0;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .left .pedia .field .email h6{
+        margin:0px;
+        position: absolute;
+        top:4px;
+        left:5px;
+        color:#aaa4a4;
+        pointer-events: none;
+    
+    }
+    .left .pedia .field .password h6{
+        margin:0px;
+        position: absolute;
+        top:4px;
+        left:5px;
+        color:#aaa4a4;
+        pointer-events: none;
+    }
+
+    .left .pedia .checkbox{
+        /* padding:1rem; */
+        /* background-color: aqua; */
+        display: flex;
+        /* flex:0 5% */
+        /* flex:1; */
+        justify-content: space-between;
+
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+
+    .left .pedia .checkbox .remember{
+        
+        /* background-color: brown; */
+        display: flex;
+        /* flex:1; */
+        justify-content: center;
+        align-items: center;
+       
+        
+        
+    }
+    .left .pedia .checkbox h6{
+        margin:0px;
+        color:#c0c0c0;
+        /* line-height: 1px; */
+    }
+    .left .pedia .checkbox .forget{
+        /* background-color: cadetblue; */
+        display: flex;
+        /* flex:1; */
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+    }
+    .left .pedia .checkbox .forget a{
+        text-decoration: none;
+        color:#c0c0c0;
+    }
+
+    .left .pedia .checkbox .forget a:hover{
+        /* background-color:#178abe; */
+        color:#178abe;
+    }
+
+    /* buttons */
+    .left .pedia .buttons{
+        /* margin-top: 10%; */
+        /* background-color: darkgoldenrod; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* flex:1; */
+        /* flex:0 30%;    na to sbhsw */
+        margin-top: 3rem;
+    }
+
+    .left .pedia .buttons a:first-child{
+        padding:1rem;
+        background-color:#178abe;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        color:white;
+        box-sizing: border-box;
+
+    }
+    .left .pedia .buttons  a:first-child:hover{
+        background-color: white;
+        color:#178abe;
+    }
+    .left .pedia .buttons a:last-child{
+        text-decoration: none;
+        
+        color:#c0c0c0;
+        /* width: 100%; */
+        box-sizing: border-box;
+       
+        text-align: center;
+        padding:1rem;
+        margin-top: 1rem;
+
+    }
+    
+    .left .pedia .buttons a:last-child:hover{
+        /* background-color:#178abe; */
+        color:#178abe;
+    }
+    @media screen and (max-width:768px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* height:400px; */
+        }
+        .right{
+            order:3;
+            
+        }
+        .left{
+            order:1;
+            /* height:200px; */
+            
+        }
+        
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div class="welcome">
+                <h2>Καλώς Ήρθατε</h2>
+                <h5>Συμπληρώστε τα στοχεία σας
+                    για να εισέλθεται!
+                </h5>
+            </div>
+
+            <div class="pedia">
+                <div class="field">
+                    <div class="email">
+                        <h6>Email Address</h6>
+                        <input type="email">
+                    </div>
+                </div>   
+                    <div class="field">
+                        <div class="password">
+                            <h6>Passowrod</h6>
+                            <input type="password">
+                        </div>
+                       
+                    </div>
+
+                <div class="checkbox">
+                    <div class="remember">
+                        <input type="checkbox">
+                    <h6>Να με θυμάσαι!</h6>
+                    </div>
+                    <div class="forget">
+                        <a href="#">Ξέχασα τον κωδικό μου!</a>
+                    </div>
+       
+                </div>
+
+                <div class="buttons">
+                    <a href="#">Συνέχεια</a>
+                    <a href="#">Δεν έχεις λογαριασμό?
+                        Δημιούργησε τώρα!
+                    </a>
+
+                </div>
+   
+            </div>
+
+        </div>
+
+        <div class="right">
+            <img src="canyon.jpg" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>
