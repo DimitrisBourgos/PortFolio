@@ -1,1 +1,278 @@
+<html>
+<head>
+    <title>Phone</title>
+    <meta name="viewport" content="device-width=width,
+        initial-scale=1.0"/>
+       
+        
+        <link href="fonts/css/all.css" rel="stylesheet"> <!--load all styles --> 
+
+</head>
+    <style>
+        .html,body{
+            margin:0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .container{
+            
+            display:flex;
+            
+            
+        }
+        .left{
+            /* background-color: yellow; */
+            height:100vh;
+            flex:1 40vw;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #cccccc;                            
+            box-sizing: border-box;
+        }
+        .left .top{
+            /* background-color: red; */
+            flex:1 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border-bottom: 1px solid #cccccc;
+            
+        }
+        .left .top h3,.left .top p,.left .top h4{
+            margin:0;
+        }
+        .left,.top h3{
+            margin-bottom: 1rem;
+            font-size:2rem;
+        }
+        .left,.top p{
+            text-align: center;
+            margin:1rem;
+            font-size: 1.2rem;
+        }
+        .left .top h4{
+            padding-top: 1rem;
+        }
+        .left .bottom{
+            padding-top: 2rem;
+            flex:1 40vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left .bottom .colors{
+                flex:1 30%;
+        }
+        .left .bottom .colors span:first-child{
+            display: block;
+            text-align:center;
+        }
+        .left .bottom .colors .xrwmata{
+            display: flex;
+            justify-content: center;
+            margin-top: 0.25rem;
+        }
+        .left .bottom .colors .xrwmata a{
+            width: 1.25em;
+            height: 1.25rem;
+            margin:0px 0.25rem;
+            border-radius: 100%;
+            border:3px solid transparent;
+        }
+        .left .bottom .colors .xrwmata a:hover{
+            border-color: #ec982a;
+        }
+        .left .bottom .size{
+            flex:1 30%;
+        }
+        .left .bottom .size span:first-child{
+            display: block;
+            text-align: center;
+        }
+        .left .bottom .size span:last-child{
+            display: block;
+            text-align:center;
+            margin-bottom: 0.25rem;
+            color:#000000;
+        }
+        .left .bottom .buttons a:first-child:hover{
+            background-color: white;
+            color: #ec982a;
+            border:3px solid #ec982a;
+        }
+        .left .bottom .buttons{
+            flex:1 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            padding:1.5rem;
+        }
+        .left .bottom .buttons a:first-child{
+            background-color: #ec982a;
+            color:rgb(255,255,255);
+            flex:1;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom:1rem;
+            border:3px solid transparent;
+        }
+        .left .bottom .buttons a:last-child{
+            background-color: #378bfa;
+            color:rgb(255,255,255);
+            flex:1;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left .bottom .buttons a:last-child:hover{
+            border:3px solid #378bfa;
+            background-color:white;
+            color:#378bfa;
+        }
+
+        .right{
+            height:calc(100vh - 2rem);
+            flex:1 60vw;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 1rem;
+            
+        }
+        .right a.close{
+           
+            position: absolute;
+            right:1rem;
+            top:1rem;
+            padding: 0.5rem;
+            color:rgb(50,50,50);
+        }
+        .right .close:hover{
+            color: #ec982a;
+        }
+        .right .close i{
+            font-size: 24px;
+        }
+        .right a.zoom{ 
+            position: absolute;
+            left:1rem;
+            top:1rem;
+            padding: 0.5rem;
+            color:#444444;
+        }
+        .right .zoom:hover{
+            color: #ec982a;
+        }
+        .right .zoom i{
+            font-size: 24px;
+        }
+        .right .top{
+            flex:1 60%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .right .top img{
+            width: auto;
+            height: 100%;
+             
+        }
+       
+        .right .bottom{
+            flex:1 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+         
+        .right .bottom a{
+            width:140px;
+            height:140px;
+            display: flex;
+            justify-content: center;
+            border-radius: 2px;
+            padding:4px;
+            border:3px solid transparent; 
+        }
+        .right .bottom a:first-child{
+            border:3px solid  #ec982a;
+        }
+        .right .bottom a:hover{
+            border:3px solid  #fdca86;
+        }
+        .right .bottom a img{
+            width:auto;
+            height: 100%;
+        }
+       
+    </style>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                
+                <h3>Filson</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloremque expedita tempore eligendi iure quasi qui, unde, 
+                    cupiditate facilis voluptates, est accusamus quod praesentium 
+                    dolore impedit ipsam dolorem. Iste, dolorum tempora?
+                </p>
+                <h4>220 €</h4>
+            </div>
+            <div class="bottom">
+                <div class="colors">
+                    <span>COLORS</span>
+                    <div class="xrwmata">
+                        <a  href="#" style="background-color: brown;"></a>
+                        <a  href="#" style="background-color: black;"></a>
+                        <a  href="#" style="background-color: lightgreen;"></a>
+                    </div>
+                </div>
+                <div class="size">
+                    <span>SIZE</span>
+                    <span>ONE SIZE</span>
+                </div>
+                <div class="buttons">
+                    <a href="#">ADD TO BAG</a>
+                    <a href="#">VIEW FULL DETAILS</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#" class="close">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="#" class="zoom">
+                <i class="fas fa-search-plus">
+            </i>
+               </a>
+            <div class="top">
+                <img src="item.jpeg" alt=""/>
+            </div>
+            <div class="bottom">
+                <a href="#">
+                    <img src="item.jpeg" alt="">
+                </a>
+                <a href="#">
+                    <img src="item1.jpeg" alt="">
+                </a>
+                <a href="#">
+                    <img src="item2.jpeg" alt="">
+                </a>
+                <a href="#">
+                    <img src="item3.jpeg" alt="">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
 
