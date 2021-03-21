@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind HomePage</title>
+
+    <!-- <link href="css/all.css" rel="stylesheet"> load all styles -->
+
+    <link rel="stylesheet" href="dist/styles.css">
+
+    
+    
+</head>
+    <body class="font-body">
+        <header class="w-320 h-700 tablet:h-750 w-full bg-cover bg-bottom bg-center w-full" style="background-image:url('images/bg.png')">
+           <div class="container relative mx-auto">
+            <a href="#">
+                <img class="absolute top-10 right-10 laptop:hidden" src="images/burger.png" alt="burger">
+                
+            </a>
+             
+<!-- gia to mobile --><img class="mx-auto pt-16 laptop:hidden" src="logo.svg" alt="Logo">
+               <!-- topbar -->
+                <div class="flex flex-row justify-between pt-14">
+                        <div class="flex flex-row pl-0 laptop:pl-245">
+                        <!-- time -->
+                        <div class="flex flex-col items-end">
+                            <h2 class="font-bold text-12 text-white-light tracking-2">ΑΡΚΑΔΙΑ</h2>
+                            <div class="flex flex-row">
+                                <img class="laptop:w-20 h-20 mt-8 mr-6" src="images/clock.png" alt="CLOCKS">
+                                <span class="font-ProximaNova font-normal text-white-light text-26">13:28</span>
+                            </div>                      
+                        </div>
+                        <!-- weather -->
+                        <div class="flex flex-col justify-center items-end ml-20">
+                            <h2 class="font-bold text-12 text-white-light tracking-2">ΚΑΤΑΙΓΙΔΑ</h2>
+                            <div class="flex flex-row">
+                                <img class="laptop:w-20 h-20 mt-8 mr-6" src="images/cloud-snow.png" alt="cloud-snow">
+                                <h3 class="font-ProximaNova font-normal text-26 text-white-light">12</h3>
+                                <h4 class="font-ProximaNova font-normal text-26 text-white-light">°C </h4>
+                                <h5 class="font-ProximaNova font-normal text-26 text-white-light">°F</h5>
+                            </div>    
+                        </div>
+                    
+                    </div>
+                    <!-- end left -->
+
+                    <!-- right -->
+                    <div class="hidden laptop:flex flex-row pr-40">
+                        <!-- login -->
+                        <div class="laptop:flex flex-row">
+                            <img class="laptop:w-24 h-24 mt-9 mr-6" src="images/user.png" alt="User">
+                            <a href="#">
+                                <h2 class="font-bold text-14 text-white-light mt-11 mr-42">Εγγραφή / Σύνδεση</h2>
+                            </a>   
+                        </div>
+                        
+    
+                        <a href="#" id="flag">
+                            <img class="pt-12 mr-4" src="images/flag.png" alt="Flag">   
+                        </a>
+                        <a href="#" id="down">
+                            <img class="mt-14" src="images/down.png" alt="Down">
+                        </a>
+                    </div> <!-- end right -->
+                   
+                </div> <!-- end-topbar -->
+                
+               
+                <div class="hidden laptop:block relative bg-white-light h-60"> <!-- main hidden -->
+                    <a href="/" id="logo">
+                        <img class="laptop:absolute top-1/2 left-50 transform -translate-y-2/4 rounded-full border-10 border-red-original" src="logo.svg" alt="Logo">
+                    </a>
+    
+                    <ul class="flex flex-row  h-60 mt-12 pl-280 pr-40 items-center">
+                            <li class="font-bold text-14 text-blue-dark px-12"> 
+                                <a class="relative py-21 hover:text-red-dark " href="#">Η ΟΜΟΣΠΟΝΔΙΑ</a>
+                               
+    
+                                <ul class="hidden laptop:flex flex-col w-275 h-400 rounded border-transparent border-t-15 bg-white-light border-t-15 group hover:bg-white-light  absolute top-60 left-275">
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Ιστορία</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Διοικητικό Συμβούλιο</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Μήνυμα Προέδρου</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark"href="#">Districts</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Διατελεσαντες Προέδροι</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Αποστολή - Αξίες</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Πορεία - Εξέλιξη</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Ο Οικουμενικός Πατριάρχης</a></li>
+                                    <li class="font-bold text-14 text-blue-dark pt-10 pl-20"><a class="hover:text-red-dark" href="#">Ο Αρχιεπίσκοπος Αμερικής</a></li>
+                                </ul>
+                            </li>
+                         
+                        <li class="font-bold text-14 text-blue-dark px-12"> <a  class="py-21 hover:text-red-dark" href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+                        <li class="font-bold text-14 text-blue-dark px-12"> <a  class="py-21 hover:text-red-dark" href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
+                        <li class="font-bold text-14 text-blue-dark px-12"> <a  class="py-21 hover:text-red-dark" href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
+                        <li class="font-bold text-14 text-blue-dark px-12"> <a  class="py-21 hover:text-red-dark" href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                        <li class="font-bold text-14 text-blue-dark px-12"> <a  class="py-21 hover:text-red-dark" href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                        <li><a href="#"><svg class="ml-16" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.3 3 1 4.3 1 6V18C1 19.7 2.3 21 4 21H20C21.7 21 23 19.7 23 18V6C23 4.3 21.7 3 20 3ZM4 5H20C20.4 5 20.7 5.2 20.9 5.6L12 11.8L3.1 5.6C3.3 5.2 3.6 5 4 5ZM3 18C3 18.6 3.4 19 4 19H20C20.6 19 21 18.6 21 18V7.9L12.6 13.8C12.4 13.9 12.2 14 12 14C11.8 14 11.6 13.9 11.4 13.8L3 7.9V18Z" fill="black"/>
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="22" height="18">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4C2.3 3 1 4.3 1 6V18C1 19.7 2.3 21 4 21H20C21.7 21 23 19.7 23 18V6C23 4.3 21.7 3 20 3ZM4 5H20C20.4 5 20.7 5.2 20.9 5.6L12 11.8L3.1 5.6C3.3 5.2 3.6 5 4 5ZM3 18C3 18.6 3.4 19 4 19H20C20.6 19 21 18.6 21 18V7.9L12.6 13.8C12.4 13.9 12.2 14 12 14C11.8 14 11.6 13.9 11.4 13.8L3 7.9V18Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V24H0V0Z" fill="#002868"/>
+                            </g>
+                            </svg>
+                            </a></li>
+    
+                        
+                    </ul>
+                    
+                    
+                </div> <!-- end main nav div-->
+
+                    <div class="flex flex-col items-center laptop:items-start mt-20">
+                        <img class="pt-4  laptop:pl-245" src="images/PanArcadian.png" alt="fan">
+                        <img class="pt-4 laptop:pl-245" src="images/Founded.png" alt="founded">
+                    </div>
+                <div class="w-280 h-280 p-0 mx-auto bg-cover bg-bottom bg-center  bg-red-dark rounded-full shadow-primary border-6 border-solid border-white-light pt-10 laptop:w-450 h-450 p-40 mt-80 " style="background-image:url('images/circle.png')">
+                    <svg class="mx-auto mt-20"width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                        <rect width="24" height="24" fill="white"/>
+                        </g>
+                    </svg>
+                        
+                    <h3 class="text-center font-bold text-white-light text-12 pt-10">ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
+    
+                    <h2 class="text-center font-bold pt-15 text-18 text-white-light laptop:pt-30 text-24">Η αποστολή μας</h2>
+                    <p class="text-14 pt-15 text-center font-normal leading-10 text-white-light laptop:text-16 pt-30 leading-25">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη 
+                        κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση τα μέλη 
+                        της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην 
+                        Πελοπόννησο, στη νότια Ελλάδα …
+                    </p>
+                    <a class="ml-0 font-bold text-14 text-white-light rounded border-1 border-solid laptop:inline-flex px-50 ml-80 mt-20 py-15" href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                </div>
+           </div><!-- end container  -->
+          
+           
+
+        </header>
+          <!-- apografh -->
+          <div class="h-810 flex flex-col items-center laptop:h-744 bg-cover bg-top bg-center " style="background-image:url('images/apografh.png')">
+            <img class="mt-30 pl-15 laptop:mt-40" id="trees" src="images/colored.png" alt="tree">
+            <img class="mt-10 laptop:mt-20" id="grRoots" src="images/grRoots.png" alt="GreekRoots">
+            <h2 class="container mt-30   text-34 leading-20 text-red-dark font-bold text-center  laptop:mt-40 text-48 leading-50 text-left">Μετριόμαστε, γιατί μετράμε!  </h2>
+        
+            <div class="container mt-14 flex flex-row">
+                <div class="container  flex flex-col items-center laptop:container w-464 desktop:w-475">
+                    <h2 class="container w-270 text-18 font-bold leading-20 text-blue-dark text-center tablet:text-left mt-0 laptop:container text-left">Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και 
+                        επαναπατρισθέντων από τις ΗΠΑ
+                    </h2>
+                    <p class="container w-270 mt-20 font-normal leading-25 text-black-dark text-center tablet:text-left laptop:container text-left">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί 
+                        απογραφή των Αρκάδων που διαμένουν και εργάζονται 
+                        στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). 
+                    </p>
+                    <h3 class="container w-270 font-bold text-black-dark leading-25 text-center tablet:text-left laptop:container text-left">Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</h3>
+                    <h4 class="container w-270  mt-10 font-normal text-16 leading-25 text-black-dark text-center tablet:text-left laptop:container text-left">Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να έχουμε...ψηλώσει πέρα απο τις ρίζες μας, η Αρκαδία, μας ενώνει!</h4>
+                </div>
+
+                <div class="container flex flex-col hidden tablet:block">
+                    <h2 class="font-bold text-18 leading-20 text-blue-dark mt-14 px-60">Απογραφόμαστε...</h2>
+                    <ul class="px-60">
+                        <li class="mt-20 leading-25 font-normal text-black-dark">
+                            > Για να γνωρίσουμε ο ένας τον άλλο.
+                        </li>
+                            
+                        <li class="leading-25 font-normal text-black-dark">
+                            > Για να αντλήσουμε δύναμη απο  τις ρίζες μας και την καταγωγή μας.
+                        </li>
+                        <li class="leading-25 font-normal text-black-dark">
+                            > Για να είμαστε χρήσιμοι και να  παρεμβαίνουμε δημιουργικά για τις ΗΠΑ την Ελλάδα και την Αρκαδία.
+                        </li>
+                        <li class="leading-25 font-normal text-black-dark">
+                            > Για να υλοποιήσουμε τα σχέδια και τα οραματά μας.
+                        </li>
+                        <li class="leading-25 font-normal text-black-dark">
+                             > Για να είμαστε ισχυροί.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-30 ">
+                <h2 class="font-bold text-18 leading-20 text-red-dark">ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</h2>
+                <h3 class="container w-180 font-bold text-blue-dark text-24 text-center mt-9 tablet:container ">Παρασκευή 20 Απριλίου 2108</h3>
+                <h4 class="font-bold text-blue-dark text-18 leading-20 mg-12">ΝΕΑ ΥΟΡΚΗ</h4>
+            </div>
+            
+        
+        </div>
+
+
+        <!-- erga 1800 -->
+        <div class="h-1840 bg-blue-dark flex flex-col items-center laptop\:h-750 ">
+            <div class="flex flex-col items-center pt-30 laptop:pt-40">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2214 0.000107481V8.7293H19.5107V4.48616H17.4535V6.60773H15.2786V2.12168H21.9428V10.9392H2.05716V2.12168H8.7215V6.60773H6.54647V4.48616H4.4893V8.7293H10.7786V0.000107481H0V10.9392V13.0608V24H10.7786V15.2708H4.4893V19.5137H6.54647V17.3922H8.7215V21.8784H2.05716V13.0608H21.9428V21.8784H15.2786V17.3922H17.4535V19.5137H19.5107V15.2708H13.2214V24H24V0.000107481H13.2214Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                    <rect width="24" height="24" fill="white"/>
+                    </g>
+                    </svg>
+    
+                <h2 class="font-bold text-12 text-white-light tracking-2 pt-10">ΕΡΓΑ & ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</h2> 
+            </div>
+
+            <!-- inputs -->
+            <div class="container flex flex-col items-center laptop:container flex flex-row items-center mt-30 desktop:container flex flex-row items-center">
+                <div class="flex flex-col items-center  relative ">
+                    <img class="w-260 laptop:w-300" src="images/nosokomeio.png" alt="hospital"/>
+                    <h2 class="w-260 font-bold text-18 leading-20 text-white-light pt-20 laptop:w-300 text-24 leading-25">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+                    <p class="w-260 font-bold text-16 leading-20 text-white-light pt-12 laptop:w-300 text-16 font-normal leading-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                    <svg class="absolute bottom-23 left-5" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30"/>
+                    </svg>
+                    <a class="text-white-light font-bold text-14 text-left pb-14 mr-119 laptop\:mr-220" href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                        
+                </div>
+    
+               <div class="flex flex-col items-center relative">
+                    <img class="w-260 laptop:w-300" src="images/paradosiaka.png" alt="traditional settlement"/>
+                    <h2 class="w-260 font-bold text-18 leading-20 text-white-light pt-20 laptop:w-300 text-24 leading-25">Ο  παραδοσιακός οικισμός του Λεωνιδίου</h2>
+                    <p class="w-260 font-bold text-16 leading-20 text-white-light pt-12 laptop:w-300 text-16 font-normal leading-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                    <svg class="absolute bottom-23 left-5" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30"/>
+                    </svg>
+                    <a class="text-white-light font-bold text-14 text-left pb-14 mr-119 laptop\:mr-220" href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                        
+                </div>
+    
+               <div class="flex flex-col items-center relative">
+                    <img class="w-260 laptop:w-300"src="images/parnonas.png" alt="parnonas"/>
+                    <h2 class="w-260 font-bold text-18 leading-20 text-white-light pt-20 laptop:w-300 text-24 leading-25">Κυνουρία, Εκεί που δεσπόζει ο Πάρνωνας</h2>
+                    <p class="w-260 font-bold text-16 leading-20 text-white-light pt-12 laptop:w-300 text-16 font-normal leading-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                    <svg class="absolute bottom-23 left-5" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30"/>
+                    </svg>
+                    <a class="text-white-light font-bold text-14 text-left pb-14 mr-119 laptop\:mr-220"href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>    
+                </div>
+               <div class="flex flex-col items-center relative">
+                    <img class="w-260 laptop:w-300"src="images/parka.png" alt="greek parks"/>
+                    <h2 class="w-260 font-bold text-18 leading-20 text-white-light pt-20 laptop:w-300 text-24 leading-25">Οι ελληνικές πόλεις με τα καλύτερα πάρκα!</h2>
+                    <p class="w-260 font-bold text-16 leading-20 text-white-light pt-12 laptop:w-300 text-16 font-normal leading-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                    <svg class="absolute bottom-23 left-5" width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30"/>
+                    </svg>    
+                        <a class="text-white-light font-bold text-14 text-left pb-14 mr-119 laptop\:mr-220" href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                </div>
+                <div class="flex flex-col items-end relative mt-70">
+                    <a class="w-280 text-white-light text-center py-14 font-bold text-14 rounded border-2 border-white-light hover:bg-red-dark laptop:w-200" href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>   
+                
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <!-- form  h-636 sto mobile , laptop h-643--> 
+        <div class="flex flex-col items-center h-634 laptop:h-640">
+            <h2 class=" mt-30 mb-30 text-blue-dark text-sm font-bold">Επικοινωνία</h2>
+            <div class="h-378 laptop:h-378 ">
+                <div class="h-60">
+                    <h3 class="text-xs font-normal text-black-dark mb-5">Ονοματεπώνυμο</h3>
+                    <input class="w-280 h-65 pl-5 rounded border border-gray-dark laptop:w-619 h-60"">
+                </div>
+               
+                <div class="relative h-60 ">
+                    <h3 class="text-xs font-normal text-black-dark mt-27 mb-5">Τηλέφωνο</h3>
+                    <span class="absolute bottom-0 left-5">
+                            <img src="images/icon-phone.png" alt="email">
+                    </span> 
+                    <input class="w-280 h-65 pl-25 rounded border border-gray-dark laptop:w-619 h-60">
+                </div>
+                <div class="relative h-60">
+                    <h3 class="text-xs font-normal text-black-dark mt-27 mb-5">Email</h3>
+                        <span class="absolute bottom-0 left-5">
+                            <img src="images/Icon-email.png" alt="email">
+                        </span>
+                    <input class="w-280 h-65 pl-25 rounded border border-gray-dark laptop:w-619 h-60" type="email">
+                </div>
+                
+                <div class="w-280 h-138 laptop:w-619 h-138">
+                    <h3 class="mt-27 mb-5 text-xs font-normal text-black-dark">Μήνυμα</h3>
+                    <textarea class="w-280 h-138 pl-5 rounded border border-gray-dark laptop:w-619 h-119 "></textarea>
+                </div>
+                <div class="flex flex-col items-end relative mt-70">
+                    <a class="w-130 bg-red-dark rounded  hover:bg-blue-dark laptop:w-240" href="#">
+                        <h3 class="text-center py-16 text-14 font-bold text-white-light">Αποστολή</h3>
+                        <img class="absolute right-13 top-16"src="images/iconbigger.png" alt="bigger">    
+                    </a>   
+                
+                </div>
+               
+            </div>
+            
+        </div>
+
+        <!-- footer -->
+        <div class="h-630 tablet:w-full h-442 relative laptop:h-442 desktop:h-442">
+            <a href="#" class="">
+                <img src="images/to-top.png" alt="icon top" class="z-10 absolute top-0 right-100">   
+            </a>
+                <div class="flex  flex-col h-690 w-full items-center laptop:h-420 bg-blue-dark absolute top-22 left-0 desktop:h-442">
+                   
+                    <img class="mt-30 w-141 h-141 tablet:w-141 h-141 laptop:w-162 h-162 desktop:w-180 h-180" src="logo2.svg" alt="Logo">
+                        
+                    <img class="mt-20" src="panArcadian.svg" alt="panArcadian">        
+
+                    <div class="flex flex-row justify-between container w-280 h-40 mt-27 mb-30 tablet:w-320 h-40">
+                        <img src="images/fb.png" alt="Facebook">
+                        <img src="images/twitter.png" alt="twitter">
+                        <img src="images/linkedin.png" alt="linkedin">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/youtube.png" alt="youtube">    
+                    </div>
+                    <!-- icons -->
+
+                    <ul class="text-center text-white-light font-bold text-sm laptop:flex flex-row desktop:flex flex-row">
+                        <li class="py-10"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">Η ΟΜΟΣΠΟΝΔΙΑ</a></li>
+                        <li class="py-10 laptop:ml-20 desktop:ml-40"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+                        <li class="py-10 laptop:ml-20 desktop:ml-40"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
+                        <li class="py-10 laptop:ml-20 desktop:ml-40"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
+                        <li class="py-10 laptop:ml-20 desktop:ml-40"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                        <li class="py-10 laptop:ml-20 desktop:ml-40"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a></li>
+                        <li class="py-10 laptop:ml-20  desktop:ml-40"><a class="px-20 py-10 laptop:px-0 py-0 hover:text-red-dark" href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                    </ul>   
+                      <!-- menu -->
+                       
+                          
+                    <h5 class="text-sm font-normal text-white-light mt-20 mb-23 tablet:mt-30 mb-23 laptop:mt-14 mb-8 desktop:mt-14 mb-8 bg-blue-dark">
+                        ©2018 Pan Arcadian Federation of America
+                    </h5>   
+                </div>
+                <!-- container main -->
+        </div>
+        <!-- end footer -->
+        
+    
+    </body>
+</html>

@@ -1,0 +1,1625 @@
+    @font-face {
+        font-family: ProximaNova;
+        src: url(fonts/ProximaNovaRegular.otf);
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: ProximaNova;
+        src: url(ProximaNovaBold.otf);
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: SourceSansPro;
+        src: url(fonts/SourceSansPro-Regular.ttf);
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: SourceSansPro;
+        src: url(fonts/SourceSansPro-Bold.ttf);
+        font-weight: bold;
+    }
+    body{
+        margin:0px;
+        font-family: 'SourceSansPro' , serif;
+        /* background-color: red; */
+    }
+
+    header{
+    background: url('images/bg.png') bottom center no-repeat;
+    background-size: cover;
+    height: 750px;
+    }
+
+
+    #topbar{
+        height: 10px;
+        position: relative;
+    }
+/* edw telivneiw to top  */
+
+    #topbar #burger{
+        position: absolute;
+        top:10px;
+        right:10px;
+    }
+    #topbar .left{ 
+        display: flex;
+        /* justify-content: space-around; */
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 45px;  
+    }
+
+    
+    #topbar .left .time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    
+
+    #topbar .left .time h2{ 
+        display: flex;
+        padding-left: 30px;
+        margin:0px;
+        font-size: 10px;
+        font-weight: bold;
+        color:white;
+        letter-spacing:1px;
+        /* box-sizing: border-box; */
+    }
+    
+    #topbar .left .time-content img{
+        width: 16px;
+        height: 16px;
+    }
+    #topbar .left .time-content span{
+        color:white;
+        font-size: 18px;
+        font-weight: normal;
+        padding-left: 6px;
+        line-height: 25px;
+    }
+
+    #topbar .left .weather{
+        width: 99px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;
+    }
+    #topbar .left .weather h2{
+        margin:0px;
+        font-size:10px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: white;
+        padding-right: 2px;
+
+    }
+
+
+    #topbar .left .weather .weather-content{
+        display: flex;
+        flex:1;
+    }
+
+    #topbar .left .weather .weather-content img{
+        padding-right: 5px;
+        padding-top: 5px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    
+    #topbar .left .weather .weather-content h3{
+        margin:0px;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: ProximaNova;
+        line-height: 25px;
+        color:white;
+        padding-right: 3px
+    }
+
+    #topbar .left .weather .weather-content h4{
+        margin:0px;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: ProximaNova;
+        line-height: 25px;
+        color:white;
+        padding-right: 3px
+    }
+
+    #topbar .left .weather .weather-content h5{
+        margin:0px;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: ProximaNova;
+        line-height: 25px;
+        color:white;
+        padding-right: 3px
+    }
+
+   
+    #topbar .right{
+        display: flex;
+        display: none;
+        padding-right: 40px;
+    }
+
+    #topbar .right #flag img{
+        width: 28px;
+        height: 20px;
+        padding-right: 4px;
+    }
+
+    #topbar .right .login{
+        display: flex;
+        align-items: center;
+    }
+    #topbar .right .login img{
+        padding-right: 5px;
+    }
+    #topbar .right .login a{
+        text-decoration: none;
+    }
+    #topbar .right .login h2{
+        margin:0px;
+        padding-right: 40px;
+        width: 119px;
+        height: 18px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white; 
+    }
+
+
+    nav#main{
+        border-radius: 4px;
+        position: relative;
+    }
+   
+    nav#main .founded{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    nav#main #fan{
+        width: 261px;
+        height: 14px;
+    }
+    nav#main #found{
+        padding-top: 2px;
+    }
+
+    #logo{
+        display: block;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo img{
+        display: block;
+    }
+
+    
+    .container{
+        margin:0 auto;
+    }
+
+    #main-menu{
+        padding:0 20px 0 270px;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px; 
+        list-style: none;
+       
+    }
+    #main-menu a{
+        color:#002868;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #main-menu a:hover{
+        color:#BF0A30;
+    }
+
+
+    #main-menu li a{
+        display: flex;
+        padding:20px 0 24px 0px;
+        margin: 0 10px;
+    }
+   
+    #main-menu .menu-content{
+        display: none;
+        width: 275px;
+        height: 365px;
+        position: absolute;
+        left:260px;
+        bottom: -380px;
+        list-style: none;
+        border-top: 15px solid transparent;
+    }
+
+    #main-menu:hover .menu-content{
+        display:block;
+    }
+
+    #main-menu .menu-content li a{
+        background-color: white;
+        text-decoration: none;
+        color:#002868;
+        font-size: 14px;
+        font-weight: bold;
+        padding:10px 0 5px 20px;
+    }
+    
+    #main-menu .menu-content li a:hover{
+        background-color: white;
+        text-decoration: none;
+        color:#BF0A30;
+        font-size: 14px;
+        font-weight: bold;
+        padding:10px 0 5px 20px;
+    }
+
+
+    #featured{
+        background:url('images/circle.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+        width: 280px;
+        height: 280px;
+        margin:30px auto 0;
+        border:6px solid white;
+        border-radius: 100%;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        color:white;
+        /* padding: 4px;       */
+    }
+
+    #featured h3{
+        margin:4px 0 15px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #featured h2{
+        font-size: 18px;
+        font-weight: bold;
+        margin:0 0 15px;
+    }
+
+    #featured p{
+        font-size: 14px;
+        font-weight: normal;
+        margin:0 0 15px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    #featured a{
+        border:1px solid white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        width: 140px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* telos 1ou meroys*/
+
+.apografh{
+    background: url('images/apografh.png')top center no-repeat;
+    background-size: cover;
+    height: 744px;
+    }
+    
+    .tree{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+     }
+    
+    .tree #trees{
+        width: 40px;
+        height: 70px;
+        padding-left: 12px;
+    }
+
+    .tree #grRoots{
+        padding-top:10px;
+        width: 218px;
+        height: 36px;
+        padding-bottom: 30px;
+    }
+
+    .tree h2{
+        width: 250px;
+        height: 86px;
+        margin: 0px;
+        color:#BF0A30;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center; 
+    }
+
+    .text{
+        display: flex;
+        height:285px;
+        height: 360px;
+    }
+
+    
+    .tree .text .text-left{
+        width: 275px;
+        height: 285px;
+    }
+    .tree .text .text-left h2{
+        margin: 0px;
+        width: 270px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #002868;
+        text-align: center;    
+    }
+
+    .tree .text .text-left p{
+        margin: 0px;
+        padding-top: 20px;
+        width: 270px;
+        height: 80px;
+        font-size:16px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .tree .text .text-left h3{
+        margin: 0px;
+        padding-top: 15px;
+        width: 270px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+        color:#333333;
+        text-align: center;
+    }
+
+    .tree .text .text-left h4{
+        margin: 0px;
+        padding-top: 10px;
+        width: 270px;
+        height: 100px;
+        font-size:16px;
+        font-weight: normal;
+        color: #333333;
+        line-height: 25px;
+        text-align: center;
+    }
+    .tree .text .text-right{
+        width: 465px;
+        height: 235px;
+        display: none;
+    }
+
+    .tree .text .text-right h2{
+        margin: 0px;
+        width: 150px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color:#002868;  
+        padding:20px 0 20px 40px;
+    }
+
+    .tree .text .text-right li{
+        list-style: none;
+        padding-bottom: 2px;
+        font-weight: normal;
+        line-height: 25px; 
+    }
+    
+    .tree .text .text-right li a{
+        text-decoration: none;
+        pointer-events: none;
+        color:#333333; 
+    }
+    .tree .text .text-right li a::before{
+        content: '>';
+        float: left;
+        padding-right: 10px;
+    }
+
+    .tree .date{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 184px;
+        height: 21px;
+        margin-top: 30px;
+    }
+
+    .tree .date h2{
+        margin:0px;
+        width: 141px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        color:#BF0A30;
+    }
+    .tree .date h3{
+        margin:0px;
+        width: 162px;
+        height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        color:#002868;
+        text-align: center;
+    }
+    .tree .date h4{
+        margin:0px;
+        width: 92px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 30px;
+        color:#002868;
+    }
+    /* telos 2ou meros*/
+    
+    /* 000 */
+    .erga{
+        background-color: #002868;
+        /* height: 1650px; */
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .erga .section-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:40px;
+    }
+
+    .erga .section-title h2{
+        margin: 0px;
+        height: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color:#FFFFFF;
+        padding-top: 10px;
+    }
+
+    .erga .inputs{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        width: 260px;
+        height: 1765px
+    }
+
+    .erga .inputs .hospital{
+        width: 260px;
+        height: 403px;
+        position: relative;
+    }
+    .erga .inputs .hospital img{
+        width: 260px;
+        height: 200px;
+
+    }
+    .erga .inputs .hospital h2{
+        padding-top: 20px;
+        margin: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color:#FFFFFF;
+    }
+    .erga .inputs .hospital p{
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        width: 228px;
+    }
+    .erga .inputs .hospital svg{
+        position: absolute;
+        bottom: -6px;
+        left:5px;
+    }
+    .erga .inputs .hospital a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .hospital a:hover{
+        background-color:#BF0A30 ;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .inputs .traditional{
+        padding-top: 50px;
+        width: 260px;
+        height: 403px;
+        padding-right: 20px;
+        position: relative;
+        
+    }
+    .erga .inputs .traditional img{
+        width: 260px;
+        height: 200px;
+
+    }
+    .erga .inputs .traditional h2{
+        padding-top: 20px;
+        margin: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color:#FFFFFF;
+    }
+    .erga .inputs .traditional p{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        width: 228px;
+    }
+    .erga .inputs .traditional svg{
+        position: absolute;
+        bottom: -6px;
+        left:5px;
+       
+    }
+    .erga .inputs .traditional a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .traditional a:hover{
+        background-color:#BF0A30 ;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .inputs .parnonas{
+        padding-top: 50px;
+        width: 260px;
+        height: 403px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .erga .inputs .parnonas img{
+        width: 260px;
+        height: 200px;
+
+    }
+    .erga .inputs .parnonas h2{
+        padding-top: 20px;
+        margin: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color:#FFFFFF;
+    }
+    .erga .inputs .parnonas p{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        width: 228px;
+    }
+
+    .erga .inputs .parnonas svg{
+        position: absolute;
+        bottom: -6px;
+        left:5px;
+    }
+    .erga .inputs .parnonas a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .parnonas a:hover{
+        background-color:#BF0A30 ;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .inputs .parks{
+        padding-top: 50px;
+        width: 260px;
+        height: 403px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .erga .inputs .parks img{
+        width: 260px;
+        height: 200px;
+
+    }
+    .erga .inputs .parks h2{
+        margin: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color:#FFFFFF;
+        padding-top: 20px;
+        width: 260px;
+    }
+
+    .erga .inputs .parks p{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        width: 228px;
+    }
+    .erga .inputs .parks svg{
+        position: absolute;
+        bottom: -6px;
+        left:5px;
+    }
+    .erga .inputs .parks a{
+        text-decoration: none;
+        color:#FFFFFF;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        padding:14px 34px 14px 34px;
+    }
+    .erga .inputs .parks a:hover{
+        background-color:#BF0A30;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .erga .button{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        text-align: center;
+        position: relative;   
+    }
+
+    .erga .button a{ 
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        color: #FFFFFF;
+        padding-top:16px; 
+        border:1px solid white ;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .erga .button img{
+        position: absolute;
+        top:13px;
+        right:13px;
+    }
+
+    .erga .button a:hover{
+        background-color: #BF0A30;
+        color:#FFFFFF;
+        border-radius: 4px;
+    }
+
+    .contact{
+        /* background-color: greenyellow; */
+        height: 634px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        
+    }
+    .contact .address{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 740px; */
+        height: 457px;
+    }
+    .contact  .address h2{
+        margin: 0px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color:#002868;
+    }
+    .contact .address .form{
+        width: 619px;
+        height: 378px;
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 378px;
+
+    }
+    .contact .address .form  .field {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+   
+    }
+    .contact .address .form  .field h3{
+        margin: 0px;
+        font-size: 12px;
+        font-weight: normal;
+        margin-top:15px;
+        padding-bottom: 5.5px;
+    }
+    .form .pedio{
+        border:1px solid #979797; 
+        border-radius: 4px;
+        height: 46px;
+        padding-left: 30px;
+    }
+  
+
+    .form .field span{
+        position: absolute;
+        left:0px;
+        top: 53px;
+        padding-left: 9px;
+        }
+
+        .form .textarea1{
+            /* width: 619px; */
+            height: 138px;
+        }
+        .form .textarea1 h3{
+            margin: 0px;
+            font-size: 12px;
+            font-weight: normal;
+            margin-top:15px;
+            padding-bottom: 5.5px
+        }
+        .form .textarea1 textarea{
+           
+            height: 138px;
+            width: 280px;
+            height: 138px;
+            border:1px solid #979797; 
+            border-radius: 4px;
+            height: 119px;
+            box-sizing: border-box;
+        }
+
+        .contact .button{
+            display: flex;
+            flex-direction: row;
+            margin-top: 48px;
+            justify-content: flex-end;
+        }
+        .contact .button a{
+            background-color: #BF0A30;
+            text-decoration: none;
+            width: 130px;
+            height: 50px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            padding-top: 15px;
+            box-sizing: border-box; 
+        }
+        .contact .button a:hover{
+            background-color:#002868;
+            color:white;  
+        }
+        .contact .button h3{
+            margin-top: 0px;
+        }
+        .contact .button img {
+            position: absolute;
+            right: 6px;
+            top: 15px;
+        }
+
+    /* footer start*/
+    .footer1{
+        position: relative;  
+    }
+    
+    .footer1 .to-top img{
+        position: absolute;
+        right:10px;
+        bottom: 60px;
+    }
+    
+    .footer1 .cont{
+        background-color: #002868;
+        height: 630px;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;  
+    }
+    
+    .footer1 .cont .logo2{
+        border:10px solid #002868;
+        border-radius: 100%;
+        padding-top: 20px;    
+    }
+   
+    .footer1 .cont .found{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .footer1 .cont .found svg:last-child{
+        padding-top: 4px;
+    }
+
+    .footer1 .cont .social{
+        width: 280px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 27px;    
+    }
+
+    .footer1 .cont #main-menu2{
+        width: 181px;
+        height: 446px;
+        padding:0px;
+        list-style: none;
+    }
+
+    .footer1 .cont #main-menu2 li{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .footer1 .cont #main-menu2 a{
+        color:white;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .footer1 .cont #main-menu2 a:hover{
+        color:#BF0A30;
+    }
+
+    
+    .footer1 .cont .last h5{
+        margin: 0px;
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+        padding-top: 8px;
+        padding-bottom: 24px;
+    }
+
+
+    /* media responsive */
+
+    /* tablet */
+    @media (min-width:640px){   
+        .container{
+            width:600px;
+        }
+    }
+    /* palies othones laptop */
+    @media (min-width:960px){
+        .container{
+            width:920px;    
+        }
+        #topbar{
+        height: 70px;
+        margin-left: 245px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+        #topbar #burger{
+            display: none;
+        }
+
+        #topbar .left{
+            display: flex;           
+            padding-top: 0px;
+        }
+        #topbar .left .time{
+            display: flex;
+            /* justify-content: space-between; */
+        }
+        #topbar .left .time h2{ 
+           
+            font-size:11px
+        }
+        #topbar .left .time-content img{
+            width: 18px;
+            height: 18px;
+        }
+        #topbar .left .time-content span{
+            font-size: 24px;
+            font-family: ProximaNova;
+        }
+        #topbar .left .weather h2{
+            font-size:11px;
+            font-weight: bold; 
+            letter-spacing: 2px;
+            padding-right: 0px;            
+        }
+        #topbar .left .weather .weather-content img{
+            width: 18px;
+            height: 18px;          
+        }
+        #topbar .left .weather .weather-content h3{
+            font-size: 24px;
+            font-weight: normal;
+            font-family: ProximaNova;
+            padding-right: 0px;
+        }
+        #topbar .left .weather .weather-content h4{
+            font-size: 24px;
+            font-weight: normal;
+            font-family: ProximaNova;
+            padding-right: 0px;          
+        }
+        #topbar .left .weather .weather-content h5{
+            font-size: 24px;
+            font-weight: normal;
+            font-family: ProximaNova;
+            padding-right: 0px;
+        }
+        #topbar .right{
+            display: flex;
+            padding-right: 20px;       
+        }
+
+        nav#main{
+            background:white;
+            height: 60px;
+        }
+        nav#main .founded{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 245px;
+            padding-top: 0px;   
+        }
+       
+        #logo{
+            position: absolute;
+            border:10px solid #AB0427;
+            left:50px;  /*60px olo -10 border=50px*/
+            top:50%;
+            transform: translateY(-50%);/*50% transform pros ta panv toy ipsoys*/
+        }
+        #main-menu{
+            display: flex;
+        }
+
+        #featured{
+            margin:70px auto 0;
+            width: 345px;
+            height: 350px;
+            padding: 40px;
+        }
+        #featured h3{
+            margin:10px 0 30px;
+
+        }
+        #featured h2{
+            font-size: 24px;
+            margin:0 0 30px;
+        }
+        #featured p{
+            font-size: 16px;
+            margin:0 0 30px;
+            line-height: 25px;
+        }
+
+        #featured a{
+            width: 200px;
+            height: 50px;
+        }
+
+        /* 2o meros*/
+
+        .tree{
+            display: flex;
+        }
+        
+        .tree #trees{
+            width: 45px;
+            height: 75px;
+        }
+        .tree #grRoots{
+            padding-top:15px;
+            width: 180px;
+            height: 36px;
+            padding-bottom: 35px;
+        }
+
+        .tree h2{
+            width: 580px;
+            height: 50px;
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 48px;
+            text-align: left;
+        }
+        .text{
+            display: flex;
+            padding-top: 30px;
+            height: 270px;
+            
+        }
+        
+        .tree .text .text-left{
+            width: 460px;
+            height: 245px;
+        }
+        .tree .text .text-left h2{
+            width: 450px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: left;
+        }
+        .tree .text .text-left p{
+            width: 410px;
+            height: 70px;
+            font-size:16px;
+            font-weight: normal;
+            color: #333333;
+            line-height: 25px;
+            text-align: left;
+        }
+        .tree .text .text-left h3{
+            margin: 0px;
+            padding-top: 10px;
+            width: 270px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 25px;
+            color:#333333;
+            text-align: left;
+        }
+        .tree .text .text-left h4{
+            padding-top: 20px;
+            width: 450px;
+            height: 55px;
+            font-size:16px;
+            font-weight: normal;
+            color: #333333;
+            line-height: 25px;
+            text-align: left;
+        }
+
+        .tree .date{
+            display: flex;
+            height: 97px;
+            padding-top: 30px;
+        }
+        .tree .date h3{
+            width: 400px;
+            height: 43px;
+            font-size: 27px;
+            font-weight: bold;
+            color:#002868;
+        }
+        .tree .date h4{
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 20px;
+            color:#002868;
+        }
+       
+        .tree .text .text-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 465px;
+            height: 235px;
+            text-decoration: none;
+        }
+        /* telos meros 2 111 */
+        .erga{
+            height: 1900px;
+            display: flex;
+        }
+        .erga .inputs{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 1660px;
+        }
+        .erga .inputs .hospital{
+            width: 300px;
+            height: 413px;
+             padding-top: 0px;
+        }
+        
+        .erga .inputs .hospital img{
+            width: 300px;
+            height: 200px;
+    
+        }
+        .erga .inputs .hospital h2{  
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .erga .inputs .hospital p{
+            padding-top: 12px;
+            padding-bottom: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 25px;
+            width: 300px;
+        }
+        .erga .inputs .hospital svg{
+            position: absolute;
+            bottom: 14px;
+            left:5px;
+        }
+        .erga .inputs .hospital a{
+            margin-top: 5px;
+            font-size: 14px;
+            padding:14px 34px 14px 34px;
+        }
+        /*  */
+        .erga .inputs .traditional{
+            width: 300px;
+            height: 413px;
+            /* padding-top: 30px; */
+             padding-top: 0px;
+        }
+        
+        .erga .inputs .traditional img{
+            width: 300px;
+            height: 200px;
+    
+        }
+        /*  */
+        .erga .inputs .traditional h2{
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .erga .inputs .traditional p{
+            padding-top: 12px;
+            padding-bottom: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 25px;
+            width: 300px;
+        }
+        .erga .inputs .traditional svg{
+            bottom: 14px;
+        }
+        .erga .inputs .traditional a{
+            margin-top: 5px;
+            font-size: 14px;
+            padding:14px 34px 14px 34px;
+        }
+        
+       /*  */
+       .erga .inputs .parnonas{
+            width: 300px;
+            height: 413px;
+
+            padding-top: 0px;
+        }
+    
+        .erga .inputs .parnonas img{
+            width: 300px;
+            height: 200px;
+
+        }
+    /*  */
+        .erga .inputs .parnonas h2{
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .erga .inputs .parnonas p{
+            padding-top: 12px;
+            padding-bottom: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 25px;
+            width: 300px;
+        }
+        .erga .inputs .parnonas svg{
+            bottom: 14px;
+        }
+        .erga .inputs .parnonas a{
+            margin-top: 5px;
+            font-size: 14px;
+            padding:14px 34px 14px 34px;
+        }
+        /*  */
+        .erga .inputs .parks{
+            width: 300px;
+            height: 413px;
+
+            padding-top: 0px;
+        }
+    
+        .erga .inputs .parks img{
+            width: 300px;
+            height: 200px;
+
+        }
+    /*  */
+       
+        .erga .inputs .parks h2{
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .erga .inputs .parks p{
+            padding-top: 12px;
+            padding-bottom: 14px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 25px;
+            width: 300px;
+        }
+        .erga .inputs .parks svg{
+            bottom: 14px;
+        }
+        .erga .inputs .parks a{
+            margin-top: 5px;
+            font-size: 14px;
+            padding:14px 34px 14px 34px;
+        }
+    
+
+        .contact{
+            height: 634px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;  
+        }
+        .contact .address{
+            width: 740px;
+        }
+
+        .contact .address .form{
+            display: flex;
+            width: 619px;
+            height: 378px;
+        }
+        .form .textarea1{
+            width: 619px;
+        }
+        .form .textarea1 textarea{
+            width: 619px;
+            height: 138px;
+        }
+        .contact .button a{
+            width: 240px;
+            height: 50px;
+        }
+        .contact .button img {
+            right: 13px;
+            top: 14px;
+        }
+        .footer1 .to-top img{
+            position: absolute;
+            top:-20px;
+            right: 100px;
+        }
+        .footer1 .cont{
+
+            height: 442px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        }
+        .footer1 .cont .social{
+            width: 320px;
+            height: 40px;
+            display: flex;
+        }
+
+        .footer1 .cont #main-menu2{
+            width: 850px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;  /*h 100% to idio einai*/
+            list-style: none;
+        }
+
+        .footer1 .cont #main-menu2 a{
+            font-size: 12px;
+            padding:13px 0px
+        }
+        .footer1 .cont .last h5{
+            font-size: 12px;
+            padding-top: 8px;
+            padding-bottom: 14px;
+        }
+       
+        
+    }
+    /* laptops sygxrones */
+    @media (min-width:1280px){
+        .container{
+            width:1240px;
+        }
+        #topbar{
+            height: 70px;
+            margin-left: 245px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #topbar .left .time h2{ 
+            font-size:12px;
+            letter-spacing:2px;
+        }
+        #topbar .left .time-content img{
+            width: 20px;
+            height: 20px;
+        }
+        #topbar .left .time-content span{
+            font-size: 26px;
+            font-family: ProximaNova;
+        }
+        #topbar .left .weather h2{
+            font-size:12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding-right: 0px;
+        }
+        #topbar .left .weather .weather-content img{
+            width: 20px;
+            height: 20px;
+        }
+        #topbar .left .weather .weather-content h3{
+            font-size: 26px;
+            font-weight: normal;
+            font-family: ProximaNova;
+        }
+        #topbar .left .weather .weather-content h4{
+            font-size: 26px;
+            font-weight: normal;
+            font-family: ProximaNova;
+        }
+        #topbar .left .weather .weather-content h5{
+            font-size: 26px;
+            font-weight: normal;
+            font-family: ProximaNova;
+            
+        }
+        #topbar .right{
+            display: flex;
+            padding-right: 40px;
+        }
+        #main-menu{
+            padding: 0 40px 0 300px;
+        }
+        #main-menu li a{
+                margin:0px;
+        }
+        #main-menu a{
+            font-size: 14px;
+            
+        }
+        /* telos meros 1*/
+
+        .tree{
+            display: flex; 
+        }
+        
+        .tree #trees{
+            width: 45px;
+            height: 80px;
+        }
+        .tree #grRoots{
+            padding-top:20px;
+            width: 220px;
+            height: 36px;
+            padding-bottom: 40px;
+        }
+        .tree h2{
+            width: 615px;
+            height: 50px;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 50px;
+            text-align: left;
+        }
+        .text{
+            display: flex;
+            padding-top: 40px;
+            height: 245px;
+        }
+        .tree .text .text-left{
+            width: 465px;
+            height: 245px;
+        }
+        .tree .text .text-left h2{
+            width: 460px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: left;
+        }
+        .tree .text .text-left p{
+            padding-top: 20px;
+            width: 460px;
+            height: 40px;
+            font-size:16px;
+            font-weight: normal;
+            color: #333333;
+            line-height: 25px;
+            text-align: left;
+        }
+        .tree .text .text-left h3{
+            padding-top: 40px;
+            width: 460px;
+            height: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 25px;
+            color:#333333;
+            text-align: left;
+        }
+
+        .tree .text .text-left h4{
+            margin: 0px;
+            padding-left: 4px;
+            padding-top: 15px;
+            width: 460px;
+            height: 55px;
+            font-size:16px;
+            font-weight: normal;
+            text-align: left;
+        }
+       
+        .tree .text .text-right{
+            width: 465px;
+            height: 235px;
+        }
+        .tree .date{
+            display: flex;
+            width: 440px;
+            height: 97px;
+        }
+        .tree .date h3{
+            width: 437px;
+            height: 43px;
+            font-size: 34px;
+            font-weight: bold;
+            color:#002868;
+        }
+
+        /* telos meros 2 222 */
+        .erga{
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .erga .inputs{
+            display: flex;
+            flex-direction: row;
+            width: 1265px;
+            height: 413px;
+        }
+
+        .erga .inputs .hospital{
+            width: 300px;
+            height: 413px;
+            padding-right: 20px;
+            padding-top: 0px;
+        }
+
+
+
+        .contact{
+            display: flex;
+        }
+       
+        .footer1 .cont .social{
+            width: 320px;
+            height: 40px;
+            display: flex;
+        }
+        .footer1 .cont #main-menu2{
+            width: 1101px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;  /*h 100% to idio einai*/
+            list-style: none;
+        }
+        
+        .footer1 .cont #main-menu2 a{
+            font-size: 14px; 
+            padding:15px 0px;
+        }
+        .footer1 .cont .last h5{
+            font-size: 14px;
+            font-weight: normal;
+            padding-top: 8px;
+            padding-bottom: 14px;
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
