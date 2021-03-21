@@ -1,0 +1,196 @@
+html,body{
+    margin:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    /* background-color: aqua; */
+    /* height: 400px; */
+    /* height:100vh; */
+    
+}
+.right{
+    background-color: darkcyan;
+    display: flex;
+    flex:1 60%;
+    order:1;
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* na pianei olo to right kai na mhn spaei
+    h fwto moy */
+}
+
+.left{
+    /* background-color: cyan; */
+    display: flex;
+    flex:1 40%;
+    flex-direction: column;
+    padding:50px;
+    /* box-sizing: border-box; */
+    /* height: 300px; */
+    order:0;
+    
+}
+.left .title{
+    /* margin:5px 0px; */
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex:0 30%;    width:100%  ,height:30%; */
+                    /* flex-basis: 30%; */
+    margin-bottom:2rem;
+    /* flex:0 30%; */
+    
+}
+.left .title h2{
+    margin:0px;
+    /* background-color:rebeccapurple; */
+    color: #616bff;
+    margin-bottom:1rem;
+}
+.left .title h4{
+    margin:0px;
+    /* background-color:palevioletred; */
+    color: #616bff;
+    
+}
+
+.left .pedia{
+    /* background-color: purple; */
+    
+}
+.left .pedia .field{
+    display: flex;
+    /* background-color:blue; */
+    
+    margin-bottom:1rem;
+}
+.left .pedia .field input{
+    flex:1;
+    padding:8px;
+}
+
+.left .pedia .field span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:0 50px;
+    border:1px solid gray;
+}
+/* forget-login */
+.left .buttons{
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:1rem;
+}
+/* forget */
+.left .buttons a:first-child{
+    /* background-color: coral; */
+    color: gray;
+    text-decoration: none;
+    padding:8px;
+}
+.left .buttons a:first-child:hover{
+    /* background-color:  rgb(45, 106, 238); */
+    color:rgb(45, 106, 238);
+}
+
+/* login */
+.left .buttons a:last-child{
+    background-color: rgb(45, 106, 238);
+    color:white;
+    text-decoration: none;
+    padding:8px;
+    border-radius: 2px;
+    flex: 0 100px; 
+    text-align: center;
+    box-shadow: 2px 5px 5px 3px rgb(45, 106, 238);
+}
+.left .buttons a:last-child:hover{
+    background-color:rgb(29, 29, 209);
+    color:white;
+}
+.left .space{
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:1rem;
+    
+}
+.left .space span{
+    /* background-color: crimson; */
+    display: flex;
+    padding:6px 0px;
+    height: 20px;   /*dinw ipsos kai oso spaei
+    kai allazoyn seira ta epomena ginontai hidden*/
+    overflow: hidden;
+}
+/* facebook buttons + icon */
+.left .facebook{
+    /* background-color: darkgoldenrod; */
+    text-decoration: none;
+    display: flex;
+    
+
+}
+
+/* icon fb */
+.left .facebook span:first-child{
+    background-color: rgb(68, 170, 233);
+    color:white;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex:0 50px;
+    justify-content: center;
+    align-items: center;
+    padding:8px;
+    border-right: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 2px 5px 5px 3px rgb(45, 106, 238);
+}
+/* icon fb */
+.left .facebook:hover span:first-child{
+    background-color:rgb(29, 29, 209);
+}
+/* login fb */
+.left .facebook span:last-child{
+    background-color:rgb(4, 120, 192);
+    color:white;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex:1 10%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 5px 5px 3px rgb(45, 106, 238);
+}  
+/* login fb */
+.left .facebook:hover span:last-child{
+    background-color: rgb(29, 29, 209);
+}
+
+/* media mobile */
+@media screen and (max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        order:1;
+    }
+    /* .right{
+        /* height: 300px; 
+    } */
+}
